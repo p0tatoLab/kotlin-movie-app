@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Movie App</string>
+
+    <!-- 画面タイトル -->
+    <string name="home_title">映画</string>
+    <string name="search_title">検索</string>
+    <string name="favorites_title">お気に入り</string>
+    <string name="movie_detail">詳細</string>
+
+    <!-- タブ -->
+    <string name="tab_popular">人気</string>
+    <string name="tab_top_rated">高評価</string>
+    <string name="tab_upcoming">公開予定</string>
+
+    <!-- 共通 -->
+    <string name="loading">読み込み中...</string>
+    <string name="error">エラーが発生しました</string>
+    <string name="retry">再試行</string>
+    <string name="no_results">結果がありません</string>
+
+    <!-- 検索 -->
+    <string name="search_hint">映画を検索...</string>
+
+    <!-- 詳細 -->
+    <string name="release_date">公開日</string>
+    <string name="rating">評価</string>
+    <string name="overview">概要</string>
+    <string name="add_to_favorites">お気に入りに追加</string>
+    <string name="remove_from_favorites">お気に入りから削除</string>
+</resources>
