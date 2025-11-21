@@ -1,5 +1,6 @@
 package com.example.movieapp.ui.components
 
+import androidx.compose.animation.animateContentSize
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
@@ -23,7 +24,8 @@ fun MovieCard(
     Card(
         modifier = modifier
             .fillMaxWidth()
-            .clickable(onClick = onClick),
+            .clickable(onClick = onClick)
+            .animateContentSize(), // アニメーション追加
         elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
     ) {
         Row(

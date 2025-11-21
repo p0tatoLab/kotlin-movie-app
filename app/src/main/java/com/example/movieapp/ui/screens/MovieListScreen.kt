@@ -10,6 +10,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.example.movieapp.ui.components.EmptyView
 import com.example.movieapp.ui.components.ErrorView
 import com.example.movieapp.ui.components.LoadingView
 import com.example.movieapp.ui.components.MovieCard
@@ -82,16 +83,9 @@ fun MovieListScreen(
                             }
                         )
                     }
+                    // state.movies.isEmpty() のケースを更新
                     state.movies.isEmpty() -> {
-                        Box(
-                            modifier = Modifier.fillMaxSize(),
-                            contentAlignment = androidx.compose.ui.Alignment.Center
-                        ) {
-                            Text(
-                                text = "映画が見つかりません",
-                                style = MaterialTheme.typography.bodyLarge
-                            )
-                        }
+                        EmptyView(message = "映画が見つかりません")
                     }
                     else -> {
                         LazyColumn(
